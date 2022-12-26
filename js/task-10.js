@@ -7,7 +7,7 @@ const btnDestroyEl = document.querySelector('[data-destroy]');
 const boxesEl = document.querySelector('#boxes');
 
 btnCreateEl.addEventListener('click', createBoxes);
-inputEl.addEventListener('input', onInputValue);
+inputEl.addEventListener('change', onInputValue);
 btnDestroyEl.addEventListener('click', destroyBoxes);
 
 let array = [];
