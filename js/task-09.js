@@ -8,6 +8,7 @@ const btnColorEl = document.querySelector('.widget .change-color');
 btnColorEl.addEventListener('click', onClickBtnColor);
 
 function onClickBtnColor() {
-  document.body.style.backgroundColor = getRandomHexColor();
-  spanColorEl.textContent = document.body.style.backgroundColor;
+  const randomColor = getRandomHexColor();
+  document.body.style.backgroundColor = randomColor;
+  spanColorEl.textContent = randomColor;
 }
